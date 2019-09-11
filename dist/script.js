@@ -1,24 +1,20 @@
 /*
 script for testing https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 */
-// document.addEventListener("DOMContentLoaded", function () {
-//   hljs.initHighlightingOnLoad();
-
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  hljs.initHighlightingOnLoad();
+  toggleMenu(true)
+});
 
 
 window.addEventListener('resize', () => {
   toggleMenu(true) // 
 });
 
-window.addEventListener('load', () => {
-  toggleMenu(true)
-})
-
-function toggleMenu(event) {
+function toggleMenu(val) {
   //only hide links if on mobile.
   var x = document.getElementById("links");
-  if (event) {
+  if (val) {
     //event on resize so keep closed until manually opened
     // must be less than media min-width
     if (window.innerWidth < 801) {
@@ -33,7 +29,5 @@ function toggleMenu(event) {
     }
 
   }
-
-
 
 }
