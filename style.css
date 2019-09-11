@@ -20,14 +20,12 @@
 	display: none;
 	height: 75vh;
 	max-height: 337px;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	align-content: center;
 	justify-content: center;
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
+
 
 #navbar a {
 	color: #d7e3fe;
@@ -128,13 +126,14 @@ header {
 		top: 0;
 		left: 0;
 		background-color: #3e61b7;
-		padding-top: 1em;
+		padding-top: 1em;		
 	}
+	
 
 	#navbar #links {
 		display: none;
 		max-height: 371px;
-		overflow-y: scroll;
+		overflow-y: hidden;
 	}
 
 	#navbar a {
